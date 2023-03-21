@@ -1,0 +1,191 @@
+.login__main {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+@media screen and (max-width: 767px) {
+  .login__main {
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+  }
+}
+
+.login__bg-img-cont {
+  width: 50vw;
+  background-image: url('./imgs/Rectangle\ 1456.png');
+  background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+  .login__bg-img-cont {
+    border-radius: 50%;
+    position: fixed;
+    width: 50vh;
+    height: 50vh;
+    background-size: cover;
+    top: -70px;
+    right: -70px;
+    left: auto;
+  }
+}
+@media screen and (max-width: 448px) {
+  .login__bg-img-cont {
+    border-radius: 50%;
+    width: 60vh;
+    height: 60vh;
+    background-size: cover;
+    top: -122px;
+    right: -122px;
+    left: auto;
+  }
+}
+
+.login__form-cont {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .login__form-cont {
+    align-self: flex-start;
+  }
+}
+@media screen and (max-width: 448px) {
+  .login__form-cont {
+    align-self: center;
+  }
+}
+
+.login__logo-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .login__logo-cont {
+    display: none;
+  }
+}
+
+.login__logo-text {
+  font-family: DM Sans;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin: 0;
+  color: #f7931e;
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 8px 40px 0px #07070714;
+  border-radius: 8px;
+  padding: 48px;
+}
+@media screen and (max-width: 767px) {
+  .login__form {
+    box-shadow: none;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 448px) {
+  .login__form {
+    align-self: center;
+    box-shadow: 0px 8px 40px 0px #07070714;
+    padding: 15px;
+    margin: 15px;
+  }
+}
+
+.login__heading {
+  font-family: DM Sans;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .login__heading {
+    font-size: 24px;
+  }
+}
+
+.login__label {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: left;
+  align-self: flex-start;
+  color: #475569;
+  margin-bottom: 3px;
+
+  font-family: 'DM Sans';
+  font-style: normal;
+
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 767px) {
+  .login__label {
+    font-size: 10px;
+  }
+}
+
+.login__input {
+  background: #e2e8f0;
+  border-radius: 2px;
+  border: none;
+  align-self: flex-start;
+  margin-bottom: 10px;
+  height: 1.5rem;
+  color: #171f46;
+  padding: 8px 16px 8px 16px;
+}
+
+.login__btn {
+  background: #f7931e;
+  border-radius: 8px;
+  border: none;
+  height: 1.8rem;
+  width: 100%;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+.login__error {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ef4444;
+  margin: 0;
+  text-transform: capitalize;
+  align-self: flex-start;
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 767px) {
+  .login__error {
+    font-size: 12px;
+  }
+}
